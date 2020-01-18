@@ -21,13 +21,10 @@ export default function SectionProduct() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>What we do</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          The goal for this program is to help international students in different 
+          areas such as Mentorship, Passion and Academics...
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,7 +32,7 @@ export default function SectionProduct() {
         <GridContainer>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Free Chat"
+              title="Our Values"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={Chat}
               iconColor="info"
@@ -44,8 +41,11 @@ export default function SectionProduct() {
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Tips and Advices"
+              description="- Every international student deserves to live in an environment fulfilled by equal and respectful relationships.
+                - Students learn better from people in the same age group as them, with a positive gratitude. 
+                - Communication is encouraged for long term involvement and improvement.
+                - Company and understanding can be beneficial to the development of international students. "
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -53,8 +53,9 @@ export default function SectionProduct() {
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Volunteer"
+              description="If you would like to help international students and join this program, please contact us via our Email or Facebook. 
+                You can join us and help with the Curriculum, Communication and Design."
               icon={Fingerprint}
               iconColor="danger"
               vertical
