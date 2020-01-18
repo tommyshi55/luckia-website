@@ -13,10 +13,12 @@ import CardFooter from "components/Card/CardFooter.js";
 import Muted from "components/Typography/Muted.js";
 import Button from "components/CustomButtons/Button.js";
 
-import cardProfile1Square from "assets/img/faces/card-profile1-square.jpg";
-import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
-import cardProfile6Square from "assets/img/faces/card-profile6-square.jpg";
+import tommyPic from "assets/img/faces/tommy.jpg";
+import lexiePic from "assets/img/faces/lexie.jpg";
+import jennyPic from "assets/img/faces/jenny.jpg";
+import darienPic from "assets/img/faces/darien.jpg";
+import cynthiaPic from "assets/img/faces/cynthia.jpg";
+import lucyPic from "assets/img/faces/lucy.jpg";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.js";
 import teamStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.js";
@@ -44,12 +46,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile1Square} alt="..." />
+                      <img src={lexiePic} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile1Square})`,
+                        backgroundImage: `url(${lexiePic})`,
                         opacity: "1"
                       }}
                     />
@@ -57,25 +59,20 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Alec Thompson</h4>
+                    <h4 className={classes.cardTitle}>Lexie Qiao</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>FOUNDER</h6>
+                      <h6 className={classes.cardCategory}>FOUNDER AND CEO</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth...
+                      Always have passion to build a brighter future for others and take actions from today.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="twitter">
-                      <i className="fab fa-twitter" />
-                    </Button>
-                    <Button justIcon simple color="facebook">
-                      <i className="fab fa-facebook-square" />
-                    </Button>
-                    <Button justIcon simple color="google">
-                      <i className="fab fa-google" />
-                    </Button>
+                    <a href="https://www.linkedin.com/in/tommy-shi-ba6a79121/">
+                      <Button justIcon simple color="linkedin">
+                        <i className="fab fa-linkedin-in" />
+                      </Button>
+                    </a>    
                   </CardFooter>
                 </GridItem>
               </GridContainer>
@@ -87,12 +84,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile6Square} alt="..." />
+                      <img src={lucyPic} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile6Square})`,
+                        backgroundImage: `url(${lucyPic})`,
                         opacity: "1"
                       }}
                     />
@@ -100,28 +97,92 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Kendall Andrew</h4>
+                    <h4 className={classes.cardTitle}>Lucy Shi</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>GRAPHIC DESIGNER</h6>
+                      <h6 className={classes.cardCategory}>SECRETARY</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Don{"'"}t be scared of the truth because we need to
-                      restart the human foundation in truth...
+                      A little progress each day adds up to big results.
+                    </p>
+                  </CardBody>
+                  <CardFooter plain className={classes.justifyContentCenter}>
+                    <Button justIcon simple color="linkedin">
+                      <i className="fab fa-linkedin-in" />
+                    </Button>                    
+                  </CardFooter>
+                </GridItem>
+              </GridContainer>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={6}>
+            <Card profile plain className={classes.card3}>
+              <GridContainer>
+                <GridItem xs={12} sm={5} md={5}>
+                  <CardHeader image plain>
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img src={tommyPic} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: `url(${tommyPic})`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </GridItem>
+                <GridItem xs={12} sm={7} md={7}>
+                  <CardBody plain>
+                    <h4 className={classes.cardTitle}>Tommy Shi</h4>
+                    <Muted>
+                      <h6 className={classes.cardCategory}>SENIOR SOFTWARE ENGINEER AND LEAD</h6>
+                    </Muted>
+                    <p className={classes.description}>
+                      Technology is the best when it brings all people together.
+                    </p>
+                  </CardBody>
+                  <CardFooter plain className={classes.justifyContentCenter}>
+                    <a href="https://www.linkedin.com/in/tommy-shi-ba6a79121/">
+                      <Button justIcon simple color="linkedin">
+                        <i className="fab fa-linkedin-in" />
+                      </Button>
+                    </a>                    
+                  </CardFooter>
+                </GridItem>
+              </GridContainer>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={6}>
+            <Card profile plain className={classes.card3}>
+              <GridContainer>
+                <GridItem xs={12} sm={5} md={5}>
+                  <CardHeader image plain>
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img src={cynthiaPic} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: `url(${cynthiaPic})`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </GridItem>
+                <GridItem xs={12} sm={7} md={7}>
+                  <CardBody plain>
+                    <h4 className={classes.cardTitle}>Cynthia Cai</h4>
+                    <Muted>
+                      <h6 className={classes.cardCategory}>PROJECT DIRECTOR(COMMUNICATION AND MARKETING)</h6>
+                    </Muted>
+                    <p className={classes.description}>
+                      Why be normal when you can be everything and anything else?
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
                     <Button justIcon simple color="linkedin">
                       <i className="fab fa-linkedin-in" />
                     </Button>
-                    <Button justIcon simple color="facebook">
-                      <i className="fab fa-facebook-square" />
-                    </Button>
-                    <Button justIcon simple color="dribbble">
-                      <i className="fab fa-dribbble" />
-                    </Button>
-                    <Button justIcon simple color="google">
-                      <i className="fab fa-google" />
-                    </Button>
                   </CardFooter>
                 </GridItem>
               </GridContainer>
@@ -133,12 +194,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile4Square} alt="..." />
+                      <img src={jennyPic} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${cardProfile4Square})`,
+                        backgroundImage: `url(${jennyPic})`,
                         opacity: "1"
                       }}
                     />
@@ -146,67 +207,53 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Gina Andrew</h4>
+                    <h4 className={classes.cardTitle}>Jenny Jiang</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>WEB DESIGNER</h6>
+                      <h6 className={classes.cardCategory}>EVENT DIRECTOR(COMMUNICATION)</h6>
                     </Muted>
                     <p className={classes.description}>
-                      I love you like Kanye loves Kanye. Don{"'"}t be scared of
-                      the truth.
-                    </p>
-                  </CardBody>
-                  <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="youtube">
-                      <i className="fab fa-youtube" />
-                    </Button>
-                    <Button justIcon simple color="twitter">
-                      <i className="fab fa-twitter" />
-                    </Button>
-                    <Button justIcon simple color="instagram">
-                      <i className="fab fa-instagram" />
-                    </Button>
-                  </CardFooter>
-                </GridItem>
-              </GridContainer>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={6} md={6}>
-            <Card profile plain className={classes.card3}>
-              <GridContainer>
-                <GridItem xs={12} sm={5} md={5}>
-                  <CardHeader image plain>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={cardProfile2Square} alt="..." />
-                    </a>
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: `url(${cardProfile2Square})`,
-                        opacity: "1"
-                      }}
-                    />
-                  </CardHeader>
-                </GridItem>
-                <GridItem xs={12} sm={7} md={7}>
-                  <CardBody plain>
-                    <h4 className={classes.cardTitle}>George West</h4>
-                    <Muted>
-                      <h6 className={classes.cardCategory}>BACKEND HACKER</h6>
-                    </Muted>
-                    <p className={classes.description}>
-                      I love you like Kanye loves Kanye. Don{"'"}t be scared of
-                      the truth.
+                      The art of communication is the language of leadership.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
                     <Button justIcon simple color="linkedin">
                       <i className="fab fa-linkedin-in" />
                     </Button>
-                    <Button justIcon simple color="facebook">
-                      <i className="fab fa-facebook-square" />
-                    </Button>
-                    <Button justIcon simple color="google">
-                      <i className="fab fa-google" />
+                  </CardFooter>
+                </GridItem>
+              </GridContainer>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={6}>
+            <Card profile plain className={classes.card3}>
+              <GridContainer>
+                <GridItem xs={12} sm={5} md={5}>
+                  <CardHeader image plain>
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img src={darienPic} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: `url(${darienPic})`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </GridItem>
+                <GridItem xs={12} sm={7} md={7}>
+                  <CardBody plain>
+                    <h4 className={classes.cardTitle}>Darien Tan</h4>
+                    <Muted>
+                      <h6 className={classes.cardCategory}>SOFTWARE DEVELOPER</h6>
+                    </Muted>
+                    <p className={classes.description}>
+                      Fail to plan = plan to fail.
+                    </p>
+                  </CardBody>
+                  <CardFooter plain className={classes.justifyContentCenter}>
+                    <Button justIcon simple color="linkedin">
+                      <i className="fab fa-linkedin-in" />
                     </Button>
                   </CardFooter>
                 </GridItem>
