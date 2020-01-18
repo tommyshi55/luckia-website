@@ -37,7 +37,7 @@ export default function LandingPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit PRO React"
+        brand="Luckia Student Help"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
@@ -50,12 +50,12 @@ export default function LandingPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>Welcome to Luckia Student Help</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+              Luckia Student Help is a program designed by youths to 
+              promote mental health by providing workshops for international 
+              students living abroad. Luckia also hosts youth programs for students 
+              in many languages for the purpose of applying inclusive practice and connecting all students.
               </h4>
               <br />
               <Button
@@ -64,8 +64,7 @@ export default function LandingPage({ ...rest }) {
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
               >
-                <i className="fas fa-play" />
-                Watch video
+                About Us
               </Button>
             </GridItem>
           </GridContainer>

@@ -50,7 +50,7 @@ ReactDOM.render(
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />
-      <Route path="/landing-page" component={LandingPage} />
+      <Route path="/" component={LandingPage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/pricing" component={PricingPage} />
       <Route path="/profile-page" component={ProfilePage} />
@@ -59,7 +59,6 @@ ReactDOM.render(
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
       <Route path="/signup-page" component={SignupPage} />
       <Route path="/error-page" component={ErrorPage} />
-      <Route path="/" component={PresentationPage} />
     </Switch>
   </Router>,
   document.getElementById("root")
