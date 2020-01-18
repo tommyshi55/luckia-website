@@ -33,7 +33,10 @@ export default function SectionProduct() {
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
               title="Our Values"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="​- Every international student deserves to live in an environment fulfilled by equal and respectful relationships.
+                - Students learn better from people in the same age group as them, with a positive gratitude. 
+                - Communication is encouraged for long term involvement and improvement.
+                - Company and understanding can be beneficial to the development of international students. "
               icon={Chat}
               iconColor="info"
               vertical
@@ -42,10 +45,7 @@ export default function SectionProduct() {
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
               title="Tips and Advices"
-              description="- Every international student deserves to live in an environment fulfilled by equal and respectful relationships.
-                - Students learn better from people in the same age group as them, with a positive gratitude. 
-                - Communication is encouraged for long term involvement and improvement.
-                - Company and understanding can be beneficial to the development of international students. "
+              description="In this program, we provide tips and advices to international students that can help them in their daily lives and also when they are facing different problems..."
               icon={VerifiedUser}
               iconColor="success"
               vertical
