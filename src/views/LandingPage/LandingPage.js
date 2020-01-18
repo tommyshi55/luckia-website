@@ -84,34 +84,34 @@ export default function LandingPage({ ...rest }) {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-landing"
+                    href="https://www.facebook.com/Luckia.nz/"
                     target="_blank"
                     className={classes.block}
                   >
-                    Creative Tim
+                    Facebook
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-landing"
+                    href="https://www.instagram.com/luckiastudenthelp/?hl=en"
                     target="_blank"
                     className={classes.block}
                   >
-                    About us
+                    Instagram
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
+                  <a href="https://www.linkedin.com/company/luckia-student-help/" className={classes.block}>
+                    LinkedIn
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-landing"
+                    href="https://www.google.com"
                     target="_blank"
                     className={classes.block}
                   >
-                    Licenses
+                    WeChat Official
                   </a>
                 </ListItem>
               </List>
@@ -119,13 +119,7 @@ export default function LandingPage({ ...rest }) {
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com/?ref=mkpr-landing"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              Luckia Student Help
             </div>
           </div>
         }
