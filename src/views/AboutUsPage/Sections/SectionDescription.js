@@ -22,11 +22,8 @@ export default function SectionDescription() {
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          The Luckia Student Help Program is designed by a group of vibrant students who dream to make positive influences for not only the community, 
+          but all international students in New Zealand. We thoroughly understand and love this generation, and we are passionate to make changes alongside them. 
           </h5>
         </GridItem>
       </GridContainer>

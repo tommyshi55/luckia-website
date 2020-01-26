@@ -29,25 +29,23 @@ export default function SectionServices() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>We build awesome products</h2>
+          <h2 className={classes.title}>We provide awesome service and support</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
+          The program would be highly beneficial to international students as advice from high school and university 
+          students who are studying in Auckland are provided.
           </h5>
         </GridItem>
       </GridContainer>
       <GridContainer>
         <GridItem md={4} sm={4}>
           <InfoArea
-            title="1. Design"
+            title="1. Solve Problem"
             description={
               <span>
                 <p>
-                  The moment you use Material Kit, you know you’ve never felt
-                  anything like it. With a single use, this powerfull UI Kit
-                  lets you do more than ever before.{" "}
+                Our program aims to solve problems faced by individuals by providing useful tips for both 
+                international students living abroad and students with parents in China.
                 </p>
-                <a href="#pablo">Find more...</a>
               </span>
             }
             icon={Gesture}
@@ -56,15 +54,13 @@ export default function SectionServices() {
         </GridItem>
         <GridItem md={4} sm={4}>
           <InfoArea
-            title="2. Develop"
+            title="2. Encourage"
             description={
               <span>
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
+                Our program also encourages young international students to live confidently 
+                and gain access to information they need to help them live conveniently aboard.
                 </p>
-                <a href="#pablo">Find more...</a>
               </span>
             }
             icon={Build}
@@ -73,15 +69,14 @@ export default function SectionServices() {
         </GridItem>
         <GridItem md={4} sm={4}>
           <InfoArea
-            title="3. Make Edits"
+            title="3. Provide Necessary Information"
             description={
               <span>
                 <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
+                We provide all necessary information for young students in China who are 
+                interested to study abroad. The information will be available through our 
+                hosted youth programs for students in both English and Chinese through meetings at schools, online audio (or video) calls and organized events. 
                 </p>
-                <a href="#pablo">Find more...</a>
               </span>
             }
             icon="mode_edit"

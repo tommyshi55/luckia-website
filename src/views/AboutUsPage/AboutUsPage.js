@@ -35,7 +35,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Luckia Student Help"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -58,7 +58,7 @@ export default function AboutUsPage() {
             >
               <h1 className={classes.title}>About Us</h1>
               <h4>
-                Meet the amazing team behind this project and find out more
+                Meet the amazing team behind this program and find out more
                 about how we work.
               </h4>
             </GridItem>
