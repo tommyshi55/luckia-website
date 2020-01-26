@@ -22,10 +22,8 @@ export default function SectionWork() {
         <GridItem cs={12} sm={8} md={8}>
           <h2 className={classes.title}>Work with us</h2>
           <h4 className={classes.description}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will responde get back to you in a couple of
-            hours.
+          If you would like to help international students and join this program, please fill out your information below. We will contact you shortly. 
+          You can join us and help with the Curriculum, Communication and Design.
           </h4>
           <form>
             <GridContainer>
