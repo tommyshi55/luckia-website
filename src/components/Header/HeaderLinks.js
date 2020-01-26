@@ -92,7 +92,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list + " " + classes.mlAuto}>
 
       <ListItem className={classes.listItem}>
-        <Link to="/about-us" style={{ color: 'white' }}>
+        <Link to="/error" style={{ color: 'white' }}>
           <Button
             color="transparent"
             target="_blank"
@@ -105,7 +105,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-        <Link to="/blog-post" style={{ color: 'white' }}>
+        <Link to="/error" style={{ color: 'white' }}>
         <Button
           color="transparent"
           target="_blank"
@@ -118,7 +118,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-      <Link to="/" style={{ color: 'white' }}>
+      <Link to="/error" style={{ color: 'white' }}>
         <Button
           color="transparent"
           target="_blank"
@@ -132,7 +132,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-      <Link to="/contact-us" style={{ color: 'white' }}>
+      <Link to="/error" style={{ color: 'white' }}>
         <Button
           color="transparent"
           target="_blank"
@@ -147,15 +147,16 @@ export default function HeaderLinks(props) {
 
       
       <ListItem className={classes.listItem}>
+      <Link to="/error">
         <Button
-          href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-navbar"
           color={window.innerWidth < 960 ? "info" : "white"}
           target="_blank"
           className={classes.navButton}
           round
         >
           sign up for our membership
-        </Button>
+        </Button>        
+      </Link>
       </ListItem>
     </List>
   );
