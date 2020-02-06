@@ -35,9 +35,8 @@ export default function SectionContact() {
             Want to work with us?
           </h2>
           <h4 className={classNames(classes.description, classes.textCenter)}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will get back to you in a couple of hours.
+            If you would like to help international students and join this program, please fill out your information below. We will contact you shortly. 
+            You can join us and help with the Curriculum, Communication and Design.
           </h4>
           <form>
             <GridContainer>
@@ -95,7 +94,7 @@ export default function SectionContact() {
                       }}
                       value="1"
                     >
-                      I{"'"}m a Designer
+                      I{"'"}m a Program Coordinator
                     </MenuItem>
                     <MenuItem
                       classes={{
@@ -113,7 +112,7 @@ export default function SectionContact() {
                       }}
                       value="3"
                     >
-                      I{"'"}m a Hero
+                      I{"'"}m a Event Volunteer
                     </MenuItem>
                   </Select>
                 </FormControl>
