@@ -195,7 +195,7 @@ export default function ContactUsPage() {
                   title="Give us a ring"
                   description={
                     <p>
-                      Lexie Qiao <br /> +64 27 394 2066 <br /> Mon - Fri,
+                      Luckia Student Help <br /> +64 27 394 2066 <br /> Mon - Fri,
                       8:00-22:00
                     </p>
                   }
