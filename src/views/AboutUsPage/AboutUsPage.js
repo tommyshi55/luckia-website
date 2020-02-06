@@ -81,38 +81,34 @@ export default function AboutUsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.facebook.com/Luckia.nz/"
                     target="_blank"
+                    className={classes.block}
                   >
-                    Creative Tim
+                    Facebook
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.instagram.com/luckiastudenthelp/?hl=en"
                     target="_blank"
+                    className={classes.block}
                   >
-                    About us
+                    Instagram
+                  </a>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
+                  <a href="https://www.linkedin.com/company/luckia-student-help/" className={classes.block}>
+                    LinkedIn
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="//blog.creative-tim.com/"
-                    className={classes.block}
+                    href="https://www.google.com"
                     target="_blank"
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-about-us"
                     className={classes.block}
-                    target="_blank"
                   >
-                    Licenses
+                    WeChat Official
                   </a>
                 </ListItem>
               </List>
@@ -120,13 +116,7 @@ export default function AboutUsPage() {
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-about-us"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              Luckia Student Help
             </div>
           </div>
         }

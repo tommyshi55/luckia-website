@@ -92,7 +92,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list + " " + classes.mlAuto}>
 
       <ListItem className={classes.listItem}>
-        <Link to="/error" style={{ color: 'white' }}>
+        <Link to="/about" style={{ color: 'white' }}>
           <Button
             color="transparent"
             target="_blank"
