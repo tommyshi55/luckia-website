@@ -14,10 +14,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import teamStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/teamStyle.js";
 
-import FaceMarc from "assets/img/faces/marc.jpg";
-import FaceChristian from "assets/img/faces/christian.jpg";
-import FaceKendall from "assets/img/faces/kendall.jpg";
-import FaceAvatar from "assets/img/faces/avatar.jpg";
+import tommyPic from "assets/img/faces/tommy.jpg";
+import lexiePic from "assets/img/faces/lexie.jpg";
+import cynthiaPic from "assets/img/faces/cynthia.jpg";
+import lucyPic from "assets/img/faces/lucy.jpg";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -37,8 +37,7 @@ export default function SectionTeam() {
         >
           <h2 className={classes.title}>We are nerd rockstars</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            team. Keep you user engaged by providing meaningful information.
+            We have a diverse team who looks after every student who needs help.
           </h5>
         </GridItem>
       </GridContainer>
@@ -47,27 +46,22 @@ export default function SectionTeam() {
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img src={FaceMarc} alt="profile-pic" className={classes.img} />
+                <img src={lexiePic} alt="profile-pic" className={classes.img} />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
-              <h6 className={classes.textMuted}>CEO / Co-Founder</h6>
+              <h4 className={classes.cardTitle}>Lexie Qiao</h4>
+              <h6 className={classes.textMuted}>FOUNDER AND CEO</h6>
               <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We need to restart the
-                human foundation.
+                Always have passion to build a brighter future for others and take actions from today.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="twitter">
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="facebook">
-                <i className="fab fa-facebook" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
-              </Button>
+              <a href="https://www.linkedin.com/in/lexie-qiao-2b1335143/">
+                <Button justIcon simple color="linkedin">
+                  <i className="fab fa-linkedin-in" />
+                </Button>
+              </a>    
             </CardFooter>
           </Card>
         </GridItem>
@@ -76,28 +70,21 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceKendall}
+                  src={lucyPic}
                   alt="profile-pic"
                   className={classes.img}
                 />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Tania Andrew</h4>
-              <h6 className={classes.textMuted}>DESIGNER</h6>
+              <h4 className={classes.cardTitle}>Lucy Shi</h4>
+              <h6 className={classes.textMuted}>SECRETARY</h6>
               <p className={classes.cardDescription}>
-                Don{"'"}t be scared of the truth because we need to restart the
-                human foundation. And I love you like Kanye loves Kanye.
+                A little progress each day adds up to big results.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="twitter">
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="linkedin">
+              <Button justIcon simple color="linkedin">
                 <i className="fab fa-linkedin-in" />
               </Button>
             </CardFooter>
@@ -108,26 +95,22 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceChristian}
+                  src={cynthiaPic}
                   alt="profile-pic"
                   className={classes.img}
                 />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Christian Mike</h4>
-              <h6 className={classes.textMuted}>Web Developer</h6>
+              <h4 className={classes.cardTitle}>Cynthia Cai</h4>
+              <h6 className={classes.textMuted}>PROJECT DIRECTOR(COMMUNICATION AND MARKETING)</h6>
               <p className={classes.cardDescription}>
-                I love you like Kanye loves Kanye. Don{"'"}t be scared of the
-                truth because we need to restart the human foundation.
+                Why be normal when you can be everything and anything else?
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="facebook">
-                <i className="fab fa-facebook" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
+              <Button justIcon simple color="linkedin">
+                <i className="fab fa-linkedin-in" />
               </Button>
             </CardFooter>
           </Card>
@@ -137,30 +120,25 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={FaceAvatar}
+                  src={tommyPic}
                   alt="profile-pic"
                   className={classes.img}
                 />
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Rebecca Stormvile</h4>
-              <h6 className={classes.textMuted}>WEB DEVELOPER</h6>
+              <h4 className={classes.cardTitle}>Tommy Shi</h4>
+              <h6 className={classes.textMuted}>SENIOR SOFTWARE ENGINEER AND LEAD</h6>
               <p className={classes.cardDescription}>
-                And I love you like Kanye loves Kanye. We really need to restart
-                the human foundation.
+                Technology is the best when it brings all people together.
               </p>
             </CardBody>
             <CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="google">
-                <i className="fab fa-google" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="twitter">
-                <i className="fab fa-twitter" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
+              <a href="https://www.linkedin.com/in/tommy-shi-ba6a79121/">
+                <Button justIcon simple color="linkedin">
+                  <i className="fab fa-linkedin-in" />
+                </Button>
+              </a>      
             </CardFooter>
           </Card>
         </GridItem>
