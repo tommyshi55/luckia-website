@@ -116,7 +116,7 @@ export default function ContactUsPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Luckia Student Help"
         links={<HeaderLinks dropdownHoverColor="dark" />}
         fixed
         color="dark"
@@ -144,7 +144,7 @@ export default function ContactUsPage() {
             <GridContainer>
               <GridItem md={6} sm={6}>
                 <p>
-                  You can contact us with anything related to our Products. We
+                  You can contact us with anything related to our services and products. We
                   {"'"}ll get in touch with you as soon as possible.
                   <br />
                   <br />
@@ -192,38 +192,14 @@ export default function ContactUsPage() {
               <GridItem md={4} sm={4} className={classes.mlAuto}>
                 <InfoArea
                   className={classes.info}
-                  title="Find us at the office"
-                  description={
-                    <p>
-                      Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
-                      <br /> Romania
-                    </p>
-                  }
-                  icon={PinDrop}
-                  iconColor="primary"
-                />
-                <InfoArea
-                  className={classes.info}
                   title="Give us a ring"
                   description={
                     <p>
-                      Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
+                      Lexie Qiao <br /> +64 27 394 2066 <br /> Mon - Fri,
                       8:00-22:00
                     </p>
                   }
                   icon={Phone}
-                  iconColor="primary"
-                />
-                <InfoArea
-                  className={classes.info}
-                  title="Legal Information"
-                  description={
-                    <p>
-                      Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                      EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
-                    </p>
-                  }
-                  icon={BusinessCenter}
                   iconColor="primary"
                 />
               </GridItem>
@@ -238,34 +214,34 @@ export default function ContactUsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-contact-us"
+                    href="https://www.facebook.com/Luckia.nz/"
                     target="_blank"
                     className={classes.block}
                   >
-                    Creative Tim
+                    Facebook
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-contact-us"
+                    href="https://www.instagram.com/luckiastudenthelp/?hl=en"
                     target="_blank"
                     className={classes.block}
                   >
-                    About us
+                    Instagram
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
+                  <a href="https://www.linkedin.com/company/luckia-student-help/" className={classes.block}>
+                    LinkedIn
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-contact-us"
+                    href="https://www.google.com"
                     target="_blank"
                     className={classes.block}
                   >
-                    Licenses
+                    WeChat Official
                   </a>
                 </ListItem>
               </List>
@@ -273,13 +249,7 @@ export default function ContactUsPage() {
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-contact-us"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              Luckia Student Help
             </div>
           </div>
         }
