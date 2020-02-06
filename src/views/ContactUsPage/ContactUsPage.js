@@ -196,7 +196,7 @@ export default function ContactUsPage() {
                   description={
                     <p>
                       Luckia Student Help <br /> +64 27 394 2066 <br /> Mon - Fri,
-                      8:00-22:00
+                      8:00-22:00 NZT
                     </p>
                   }
                   icon={Phone}
