@@ -109,7 +109,6 @@ const useStyles = makeStyles(contactUsStyle);
 
 export default function ContactUsPage() {
   const api_key = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
-  console.log(api_key);
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
