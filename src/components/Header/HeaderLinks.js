@@ -134,7 +134,7 @@ export default function HeaderLinks(props) {
 
       
       <ListItem className={classes.listItem}>
-      <Link to="/error">
+      <Link to="/sign-up">
         <Button
           color={window.innerWidth < 960 ? "info" : "white"}
           target="_blank"
