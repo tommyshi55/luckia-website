@@ -15,8 +15,6 @@ import Button from "components/CustomButtons/Button.js";
 
 import tommyPic from "assets/img/faces/tommy.jpg";
 import lexiePic from "assets/img/faces/lexie.jpg";
-import jennyPic from "assets/img/faces/jenny.jpg";
-import darienPic from "assets/img/faces/darien.jpg";
 import cynthiaPic from "assets/img/faces/cynthia.jpg";
 import lucyPic from "assets/img/faces/lucy.jpg";
 import raymondPic from "assets/img/faces/raymond.JPG";
