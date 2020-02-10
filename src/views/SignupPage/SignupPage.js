@@ -75,22 +75,16 @@ export default function SignUpPage({ ...rest }) {
                     <GridItem xs={12} sm={5} md={5}>
                       <InfoArea
                         className={classes.infoArea}
-                        title="Marketing"
-                        description="We've created the marketing campaign of the website. It was a very interesting collaboration."
+                        title="Stay Updated"
+                        description="Get updates about our exclusive events, workshops and services."
                         icon={Timeline}
                         iconColor="rose"
                       />
+                      
                       <InfoArea
                         className={classes.infoArea}
-                        title="Fully Coded in HTML5"
-                        description="We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub."
-                        icon={Code}
-                        iconColor="primary"
-                      />
-                      <InfoArea
-                        className={classes.infoArea}
-                        title="Built Audience"
-                        description="There is also a Fully Customizable CMS Admin Dashboard for this product."
+                        title="Keep Up for New Opportunities"
+                        description="Stay updated for future opportunities to volunteer nad work with us."
                         icon={Group}
                         iconColor="info"
                       />
