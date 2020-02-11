@@ -14,6 +14,8 @@ const db = mongoose.connection;
 db.once('open', () => console.log("Connected to the database"));
 db.on('error', (err) => console.log("Database connection error " + err)); 
 
+app.use('/api/signup', require('./routes/signup'));
+
 app.listen(PORT, () => {
     console.log("Server is running on port " + PORT);
 })
