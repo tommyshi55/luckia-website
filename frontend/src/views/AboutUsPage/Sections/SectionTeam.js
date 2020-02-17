@@ -18,6 +18,8 @@ import tommyPic from "assets/img/faces/tommy.jpg";
 import lexiePic from "assets/img/faces/lexie.jpg";
 import cynthiaPic from "assets/img/faces/cynthia.jpg";
 import lucyPic from "assets/img/faces/lucy.jpg";
+import raymondPic from "assets/img/faces/raymond.JPG";
+import hongchangPic from "assets/img/faces/hongchang.JPG";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -78,7 +80,7 @@ export default function SectionTeam() {
             </CardAvatar>
             <CardBody plain>
               <h4 className={classes.cardTitle}>Lucy Shi</h4>
-              <h6 className={classes.textMuted}>SECRETARY</h6>
+              <h6 className={classes.textMuted}>PROGRAM COORDINATOR</h6>
               <p className={classes.cardDescription}>
                 A little progress each day adds up to big results.
               </p>
@@ -103,7 +105,7 @@ export default function SectionTeam() {
             </CardAvatar>
             <CardBody plain>
               <h4 className={classes.cardTitle}>Cynthia Cai</h4>
-              <h6 className={classes.textMuted}>PROJECT DIRECTOR(COMMUNICATION AND MARKETING)</h6>
+              <h6 className={classes.textMuted}>PROGRAM COORDINATOR</h6>
               <p className={classes.cardDescription}>
                 Why be normal when you can be everything and anything else?
               </p>
@@ -128,7 +130,7 @@ export default function SectionTeam() {
             </CardAvatar>
             <CardBody plain>
               <h4 className={classes.cardTitle}>Tommy Shi</h4>
-              <h6 className={classes.textMuted}>SENIOR SOFTWARE ENGINEER AND LEAD</h6>
+              <h6 className={classes.textMuted}>HEAD OF TECHNOLOGY</h6>
               <p className={classes.cardDescription}>
                 Technology is the best when it brings all people together.
               </p>
@@ -139,6 +141,52 @@ export default function SectionTeam() {
                   <i className="fab fa-linkedin-in" />
                 </Button>
               </a>      
+            </CardFooter>
+          </Card>
+        </GridItem>
+        <GridItem md={3} sm={3}>
+          <Card profile plain>
+            <CardAvatar profile plain>
+              <a href="#pablo">
+                <img src={raymondPic} alt="profile-pic" className={classes.img} />
+              </a>
+            </CardAvatar>
+            <CardBody plain>
+              <h4 className={classes.cardTitle}>Raymond Lin</h4>
+              <h6 className={classes.textMuted}>DIGITAL MARKETING MANAGER AND FRONTEND DEVELOPER</h6>
+              <p className={classes.cardDescription}>
+                Hello world!
+              </p>
+            </CardBody>
+            <CardFooter className={classes.justifyContent}>
+              <a href="https://www.linkedin.com/in/xizhe-lin-715349166/">
+                <Button justIcon simple color="linkedin">
+                  <i className="fab fa-linkedin-in" />
+                </Button>
+              </a>    
+            </CardFooter>
+          </Card>
+        </GridItem>
+        <GridItem md={3} sm={3}>
+          <Card profile plain>
+            <CardAvatar profile plain>
+              <a href="#pablo">
+                <img src={hongchangPic} alt="profile-pic" className={classes.img} />
+              </a>
+            </CardAvatar>
+            <CardBody plain>
+              <h4 className={classes.cardTitle}>Hongchang Zhang</h4>
+              <h6 className={classes.textMuted}>ASSISTANT PROGRAM COORDINATOR</h6>
+              <p className={classes.cardDescription}>
+                Make the best use of every day.
+              </p>
+            </CardBody>
+            <CardFooter className={classes.justifyContent}>
+              <a href="https://www.linkedin.com/in/hongchang-zhang-253002184/">
+                <Button justIcon simple color="linkedin">
+                  <i className="fab fa-linkedin-in" />
+                </Button>
+              </a>    
             </CardFooter>
           </Card>
         </GridItem>

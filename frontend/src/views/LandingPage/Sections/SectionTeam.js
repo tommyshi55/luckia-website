@@ -15,10 +15,10 @@ import Button from "components/CustomButtons/Button.js";
 
 import tommyPic from "assets/img/faces/tommy.jpg";
 import lexiePic from "assets/img/faces/lexie.jpg";
-import jennyPic from "assets/img/faces/jenny.jpg";
-import darienPic from "assets/img/faces/darien.jpg";
 import cynthiaPic from "assets/img/faces/cynthia.jpg";
 import lucyPic from "assets/img/faces/lucy.jpg";
+import raymondPic from "assets/img/faces/raymond.JPG";
+import hongchangPic from "assets/img/faces/hongchang.JPG";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.js";
 import teamStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.js";
@@ -99,7 +99,7 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Lucy Shi</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>SECRETARY</h6>
+                      <h6 className={classes.cardCategory}>PROGRAM COORDINATOR</h6>
                     </Muted>
                     <p className={classes.description}>
                       A little progress each day adds up to big results.
@@ -135,7 +135,7 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Tommy Shi</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>SENIOR SOFTWARE ENGINEER AND LEAD</h6>
+                      <h6 className={classes.cardCategory}>HEAD OF TECHNOLOGY</h6>
                     </Muted>
                     <p className={classes.description}>
                       Technology is the best when it brings all people together.
@@ -173,7 +173,7 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Cynthia Cai</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>PROJECT DIRECTOR(COMMUNICATION AND MARKETING)</h6>
+                      <h6 className={classes.cardCategory}>PROGRAM COORDINATOR</h6>
                     </Muted>
                     <p className={classes.description}>
                       Why be normal when you can be everything and anything else?
@@ -194,12 +194,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={jennyPic} alt="..." />
+                      <img src={raymondPic} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${jennyPic})`,
+                        backgroundImage: `url(${raymondPic})`,
                         opacity: "1"
                       }}
                     />
@@ -207,18 +207,20 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Jenny Jiang</h4>
+                    <h4 className={classes.cardTitle}>Raymond Lin</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>EVENT DIRECTOR(COMMUNICATION)</h6>
+                      <h6 className={classes.cardCategory}>DIGITAL MARKETING MANAGER AND FRONTEND DEVELOPER</h6>
                     </Muted>
                     <p className={classes.description}>
-                      The art of communication is the language of leadership.
+                      Hello world!
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
-                      <i className="fab fa-linkedin-in" />
-                    </Button>
+                    <a href="https://www.linkedin.com/in/xizhe-lin-715349166/">
+                      <Button justIcon simple color="linkedin">
+                        <i className="fab fa-linkedin-in" />
+                      </Button>
+                    </a>     
                   </CardFooter>
                 </GridItem>
               </GridContainer>
@@ -230,12 +232,12 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={darienPic} alt="..." />
+                      <img src={hongchangPic} alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: `url(${darienPic})`,
+                        backgroundImage: `url(${hongchangPic})`,
                         opacity: "1"
                       }}
                     />
@@ -243,18 +245,20 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Darien Tan</h4>
+                    <h4 className={classes.cardTitle}>Hongchang Zhang</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>SOFTWARE DEVELOPER</h6>
+                      <h6 className={classes.cardCategory}>ASSISTANT PROGRAM COORDINATOR</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Fail to plan = plan to fail.
+                      Make the best use of every day.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
-                      <i className="fab fa-linkedin-in" />
-                    </Button>
+                    <a href="https://www.linkedin.com/in/hongchang-zhang-253002184/">
+                      <Button justIcon simple color="linkedin">
+                        <i className="fab fa-linkedin-in" />
+                      </Button>
+                    </a>     
                   </CardFooter>
                 </GridItem>
               </GridContainer>
