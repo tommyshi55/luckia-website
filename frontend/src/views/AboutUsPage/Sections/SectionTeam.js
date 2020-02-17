@@ -19,6 +19,7 @@ import lexiePic from "assets/img/faces/lexie.jpg";
 import cynthiaPic from "assets/img/faces/cynthia.jpg";
 import lucyPic from "assets/img/faces/lucy.jpg";
 import raymondPic from "assets/img/faces/raymond.JPG";
+import hongchangPic from "assets/img/faces/hongchang.JPG";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -159,6 +160,29 @@ export default function SectionTeam() {
             </CardBody>
             <CardFooter className={classes.justifyContent}>
               <a href="https://www.linkedin.com/in/xizhe-lin-715349166/">
+                <Button justIcon simple color="linkedin">
+                  <i className="fab fa-linkedin-in" />
+                </Button>
+              </a>    
+            </CardFooter>
+          </Card>
+        </GridItem>
+        <GridItem md={3} sm={3}>
+          <Card profile plain>
+            <CardAvatar profile plain>
+              <a href="#pablo">
+                <img src={hongchangPic} alt="profile-pic" className={classes.img} />
+              </a>
+            </CardAvatar>
+            <CardBody plain>
+              <h4 className={classes.cardTitle}>Hongchang Zhang</h4>
+              <h6 className={classes.textMuted}>ASSISTANT PROGRAM COORDINATOR</h6>
+              <p className={classes.cardDescription}>
+                Make the best use of every day.
+              </p>
+            </CardBody>
+            <CardFooter className={classes.justifyContent}>
+              <a href="https://www.linkedin.com/in/hongchang-zhang-253002184/">
                 <Button justIcon simple color="linkedin">
                   <i className="fab fa-linkedin-in" />
                 </Button>

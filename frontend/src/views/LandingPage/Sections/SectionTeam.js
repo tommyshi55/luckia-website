@@ -18,6 +18,7 @@ import lexiePic from "assets/img/faces/lexie.jpg";
 import cynthiaPic from "assets/img/faces/cynthia.jpg";
 import lucyPic from "assets/img/faces/lucy.jpg";
 import raymondPic from "assets/img/faces/raymond.JPG";
+import hongchangPic from "assets/img/faces/hongchang.JPG";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.js";
 import teamStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.js";
@@ -216,6 +217,44 @@ export default function SectionTeam() {
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
                     <a href="https://www.linkedin.com/in/xizhe-lin-715349166/">
+                      <Button justIcon simple color="linkedin">
+                        <i className="fab fa-linkedin-in" />
+                      </Button>
+                    </a>     
+                  </CardFooter>
+                </GridItem>
+              </GridContainer>
+            </Card>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={6}>
+            <Card profile plain className={classes.card3}>
+              <GridContainer>
+                <GridItem xs={12} sm={5} md={5}>
+                  <CardHeader image plain>
+                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <img src={hongchangPic} alt="..." />
+                    </a>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: `url(${hongchangPic})`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </GridItem>
+                <GridItem xs={12} sm={7} md={7}>
+                  <CardBody plain>
+                    <h4 className={classes.cardTitle}>Hongchang Zhang</h4>
+                    <Muted>
+                      <h6 className={classes.cardCategory}>ASSISTANT PROGRAM COORDINATOR</h6>
+                    </Muted>
+                    <p className={classes.description}>
+                      Make the best use of every day.
+                    </p>
+                  </CardBody>
+                  <CardFooter plain className={classes.justifyContentCenter}>
+                    <a href="https://www.linkedin.com/in/hongchang-zhang-253002184/">
                       <Button justIcon simple color="linkedin">
                         <i className="fab fa-linkedin-in" />
                       </Button>
