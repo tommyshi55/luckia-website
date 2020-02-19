@@ -7,6 +7,7 @@ const PORT = 4000;
 const app = express();
 
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.connect('mongodb://127.0.0.1:27017/luckia-sh-members', { useNewUrlParser: true });

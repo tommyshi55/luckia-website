@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const dotenv = require('dotenv');
+const request = require('request');
 dotenv.config();
 
 module.exports = (function() {
@@ -36,16 +37,16 @@ module.exports = (function() {
 
         request(options, (error, response, body) => {
             if (error) {
-                alert("Unable to sign up. Please try again later");
+                return res.status(500).json({ success: false, error: error });
             } else {
                 if (response.statusCode == 200) {
-                    alert("Sign up successfully!");
+                    return res.json({ success: true });
                 } else {
-                    alert("Unable to sign up. Please try again later");
+                    return res.status(500).json({ success: false, error: error });
                 }
             }
         });
     });
 
     return router;
-});
+}());
