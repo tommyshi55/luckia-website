@@ -28,8 +28,30 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import signupPageStyle from "assets/jss/material-kit-pro-react/views/signupPageStyle.js";
 
 import image from "assets/img/bg7.jpg";
+import axios from "axios";
 
 const useStyles = makeStyles(signupPageStyle);
+
+function onSignup(firstName, lastName, email, phone) {
+  // axios.post('http://localhost:4000/api/signup', {
+  //   fName: firstName,
+  //   lName: lastName,
+  //   email: email,
+  //   phone: phone
+  // })
+  // .then(response => console.log("success"))
+  // .catch(err => console.log("failure"));
+  axios({
+    method: 'post',
+    url: 'http://localhost:4000/api/signup',
+    data: {
+      fName: firstName,
+      lName: lastName,
+      email: email,
+      phone: phone
+    }
+  });
+}
 
 export default function SignUpPage({ ...rest }) {
   const [checked, setChecked] = React.useState([1]);
@@ -47,6 +69,13 @@ export default function SignUpPage({ ...rest }) {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+
+  // input form field
+  const [email, setEmail] = React.useState("");
+  const [firstName, setFirstName] = React.useState("");
+  const [lastName, setLastName] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+
   const classes = useStyles();
   return (
     <div>
@@ -105,7 +134,8 @@ export default function SignUpPage({ ...rest }) {
                                 <Face className={classes.inputAdornmentIcon} />
                               </InputAdornment>
                             ),
-                            placeholder: "First Name..."
+                            placeholder: "First Name...",
+                            onChange: (event) => setFirstName(event.target.value)
                           }}
                         />
                         <CustomInput
@@ -122,7 +152,8 @@ export default function SignUpPage({ ...rest }) {
                                 <Face className={classes.inputAdornmentIcon} />
                               </InputAdornment>
                             ),
-                            placeholder: "Last Name..."
+                            placeholder: "Last Name...",
+                            onChange: (event) => setLastName(event.target.value)
                           }}
                         />
                         <CustomInput
@@ -139,7 +170,8 @@ export default function SignUpPage({ ...rest }) {
                                 <Email className={classes.inputAdornmentIcon} />
                               </InputAdornment>
                             ),
-                            placeholder: "Email..."
+                            placeholder: "Email...",
+                            onChange: (event) => setEmail(event.target.value)
                           }}
                         />
                         <CustomInput
@@ -158,11 +190,12 @@ export default function SignUpPage({ ...rest }) {
                                 </Icon>
                               </InputAdornment>
                             ),
-                            placeholder: "Phone Number..."
+                            placeholder: "Phone Number...",
+                            onChange: (event) => setPhone(event.target.value)
                           }}
                         />
                         <div className={classes.textCenter}>
-                          <Button round color="primary">
+                          <Button round color="primary" onClick={() => onSignup(firstName, lastName, email, phone)}>
                             Sign Up
                           </Button>
                         </div>
