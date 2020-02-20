@@ -33,14 +33,6 @@ import axios from "axios";
 const useStyles = makeStyles(signupPageStyle);
 
 function onSignup(firstName, lastName, email, phone) {
-  // axios.post('http://localhost:4000/api/signup', {
-  //   fName: firstName,
-  //   lName: lastName,
-  //   email: email,
-  //   phone: phone
-  // })
-  // .then(response => console.log("success"))
-  // .catch(err => console.log("failure"));
   axios({
     method: 'post',
     url: 'http://localhost:4000/api/signup',

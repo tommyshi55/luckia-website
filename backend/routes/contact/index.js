@@ -16,12 +16,13 @@ module.exports = (function() {
         const emailText = "name: " + req.body.name + "\nemail: " + req.body.email + "\nphone: " + req.body.phone +
             "\nmessage: " + req.body.message;
         var mailOption = {
-            to: process.env.GMAIL,
+            from: process.env.GMAIL,
+            to: "luckiastudenthelp@gmail.com",
             subject: "New Message from Website",
             text: emailText
         }
 
-        smtpTransport.sendMail(mailOption, (err, res) => {
+        smtpTransport.sendMail(mailOption, (err, response) => {
             if (err) {
                 return res.status(500).json({ success: false, error: err });
             } else {
