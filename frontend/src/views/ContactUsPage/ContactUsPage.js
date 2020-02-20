@@ -1,5 +1,6 @@
 /*eslint-disable*/
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components used to create a google map
@@ -105,6 +106,15 @@ const CustomSkinMap = withScriptjs(
   ))
 );
 
+async function onSubmit(name, email, phone, message) {
+  await axios.post('http://localhost:4000/api/contact', {
+    name: name,
+    email: email,
+    phone: phone,
+    message: message
+  });
+}
+
 const useStyles = makeStyles(contactUsStyle);
 
 export default function ContactUsPage() {
@@ -113,6 +123,15 @@ export default function ContactUsPage() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+
+  const [status, setStatus] = React.useState("");
+
+  // input form field
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
   const classes = useStyles();
   return (
     <div>
@@ -157,6 +176,9 @@ export default function ContactUsPage() {
                     formControlProps={{
                       fullWidth: true
                     }}
+                    inputProps={{
+                      onChange: (event) => setName(event.target.value)
+                    }}
                   />
                   <CustomInput
                     labelText="Email address"
@@ -164,12 +186,18 @@ export default function ContactUsPage() {
                     formControlProps={{
                       fullWidth: true
                     }}
+                    inputProps={{
+                      onChange: (event) => setEmail(event.target.value)
+                    }}
                   />
                   <CustomInput
                     labelText="Phone"
                     id="float"
                     formControlProps={{
                       fullWidth: true
+                    }}
+                    inputProps={{
+                      onChange: (event) => setPhone(event.target.value)
                     }}
                   />
                   <CustomInput
@@ -180,11 +208,19 @@ export default function ContactUsPage() {
                     }}
                     inputProps={{
                       multiline: true,
-                      rows: 6
+                      rows: 6,
+                      onChange: (event) => setMessage(event.target.value)
                     }}
                   />
                   <div className={classes.textCenter}>
-                    <Button color="primary" round>
+                    <p>{status}</p>
+                    <Button color="primary" round onClick={() => {
+                      onSubmit(name, email, phone, message)
+                      .then((response) => {
+                        setStatus("Thank you for your message. We will be in contact shortly.");
+                        setTimeout(() => setStatus(""), 3000);
+                      });
+                    }}>
                       Contact us
                     </Button>
                   </div>
