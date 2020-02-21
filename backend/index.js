@@ -17,6 +17,7 @@ db.on('error', (err) => console.log("Database connection error " + err));
 
 app.use('/api/signup', require('./routes/signup'));
 app.use('/api/contact', require('./routes/contact'));
+app.use('/api/work', require('./routes/work'));
 
 app.listen(PORT, () => {
     console.log("Server is running on port " + PORT);

@@ -14,7 +14,7 @@ var smtpTransport = nodemailer.createTransport({
 module.exports = (function() {
     router.post('/', (req, res) => {
         const emailText = "name: " + req.body.name + "\nemail: " + req.body.email +
-            "\nmessage: " + req.body.message;
+            "\nmessage/speciality: " + req.body.message;
         var mailOption = {
             from: process.env.GMAIL,
             to: "luckiastudenthelp@gmail.com",

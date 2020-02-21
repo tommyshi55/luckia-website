@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios';
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -14,7 +15,20 @@ import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSectio
 
 const useStyles = makeStyles(workStyle);
 
+function onSubmit(name, email, message) {
+  axios.post('http://localhost:4000/api/work', {
+    name: name,
+    email: email,
+    message: message
+  });
+}
+
 export default function SectionWork() {
+  // input fields
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -34,6 +48,9 @@ export default function SectionWork() {
                   formControlProps={{
                     fullWidth: true
                   }}
+                  inputProps={{
+                    onChange: (event) => setName(event.target.value)
+                  }}
                 />
               </GridItem>
               <GridItem xs={12} sm={6} md={6}>
@@ -42,6 +59,9 @@ export default function SectionWork() {
                   id="email"
                   formControlProps={{
                     fullWidth: true
+                  }}
+                  inputProps={{
+                    onChange: (event) => setEmail(event.target.value)
                   }}
                 />
               </GridItem>
@@ -54,7 +74,8 @@ export default function SectionWork() {
                 }}
                 inputProps={{
                   multiline: true,
-                  rows: 5
+                  rows: 5,
+                  onChange: (event) => setMessage(event.target.value)
                 }}
               />
               <GridItem
@@ -63,7 +84,7 @@ export default function SectionWork() {
                 md={4}
                 className={classes.mrAuto + " " + classes.mlAuto}
               >
-                <Button color="primary">Send Message</Button>
+                <Button color="primary" onClick={() => onSubmit(name, email, message)}>Send Message</Button>
               </GridItem>
             </GridContainer>
           </form>
