@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.8.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
@@ -44,7 +28,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/about" component={AboutUsPage} />
-      <Route path="/blog-post" component={BlogPostPage} />
+      <Route path="/service" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />

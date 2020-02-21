@@ -18,9 +18,6 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // sections for this page
 import SectionText from "./Sections/SectionText.js";
-import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
-import SectionComments from "./Sections/SectionComments.js";
-import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
@@ -35,7 +32,7 @@ export default function BlogPostPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Luckia Student Help"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -56,9 +53,6 @@ export default function BlogPostPage() {
                 did.
               </h4>
               <br />
-              <Button color="rose" size="lg" round>
-                <FormatAlignLeft /> Read Article
-              </Button>
             </GridItem>
           </GridContainer>
         </div>
@@ -66,11 +60,8 @@ export default function BlogPostPage() {
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionText />
-          <SectionBlogInfo />
-          <SectionComments />
         </div>
       </div>
-      <SectionSimilarStories />
       <Footer
         content={
           <div>
@@ -78,38 +69,34 @@ export default function BlogPostPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-blog-post"
+                    href="https://www.facebook.com/Luckia.nz/"
                     target="_blank"
                     className={classes.block}
                   >
-                    Creative Tim
+                    Facebook
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-post"
+                    href="https://www.instagram.com/luckiastudenthelp/?hl=en"
                     target="_blank"
                     className={classes.block}
                   >
-                    About us
+                    Instagram
+                  </a>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
+                  <a href="https://www.linkedin.com/company/luckia-student-help/" className={classes.block}>
+                    LinkedIn
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://blog.creative-tim.com/?ref=mkpr-blog-post"
+                    href="https://www.google.com"
                     target="_blank"
                     className={classes.block}
                   >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-blog-post"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
+                    WeChat Official
                   </a>
                 </ListItem>
               </List>
@@ -117,13 +104,7 @@ export default function BlogPostPage() {
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-blog-post"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              Luckia Student Help
             </div>
           </div>
         }
