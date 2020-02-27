@@ -8,7 +8,6 @@ import "./assets/scss/material-kit-pro-react.scss?v=1.8.0";
 // pages for this product
 import AboutUsPage from "./views/AboutUsPage/AboutUsPage.js";
 import BlogPostPage from "./views/BlogPostPage/BlogPostPage.js";
-import BlogPostsPage from "./views/BlogPostsPage/BlogPostsPage.js";
 import ComponentsPage from "./views/ComponentsPage/ComponentsPage.js";
 import ContactUsPage from "./views/ContactUsPage/ContactUsPage.js";
 import EcommercePage from "./views/EcommercePage/EcommercePage.js";
@@ -29,7 +28,6 @@ ReactDOM.render(
     <Switch>
       <Route path="/about" component={AboutUsPage} />
       <Route path="/service" component={BlogPostPage} />
-      <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />
