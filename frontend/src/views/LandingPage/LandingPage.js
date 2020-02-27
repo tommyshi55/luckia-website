@@ -24,6 +24,7 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 import SectionProduct from "./Sections/SectionProduct.js";
 import SectionTeam from "./Sections/SectionTeam.js";
 import SectionWork from "./Sections/SectionWork.js";
+import SectionSponsor from "./Sections/SectionSponsor.js";
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -74,6 +75,7 @@ export default function LandingPage({ ...rest }) {
         <div className={classes.container}>
           <SectionProduct />
           <SectionTeam />
+          <SectionSponsor />
           <SectionWork />
         </div>
       </div>
