@@ -46,11 +46,10 @@ export default function BlogPostPage() {
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
               <h1 className={classes.title}>
-                How We Built the Most Successful Castle Ever
+                Our Service
               </h1>
               <h4 className={classes.subtitle}>
-                The last 48 hours of my life were total madness. This is what I
-                did.
+                Find out what we offer to help you through your university life.
               </h4>
               <br />
             </GridItem>
