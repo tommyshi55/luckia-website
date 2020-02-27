@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -17,11 +18,39 @@ import contactStyle from "assets/jss/material-kit-pro-react/views/aboutUsSection
 
 const useStyles = makeStyles(contactStyle);
 
+function onSubmit(name, email, select) {
+  var message = "";
+  switch(select) {
+    case "1":
+      message = "I want to be a program coordinator";
+      break;
+    case "2":
+      message = "I want to be a developer";
+      break;
+    case "3":
+      message = "I want to be a event volunteer";
+      break;
+    default:
+      console.log("No speciality");
+  }
+
+  axios.post('http://localhost:4000/api/work', {
+    name: name,
+    email: email,
+    message: message
+  });
+}
+
 export default function SectionContact() {
   const [specialitySelect, setSpecialitySelect] = React.useState("1");
   const handleSpeciality = event => {
     setSpecialitySelect(event.target.value);
   };
+
+  // input fields
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+
   const classes = useStyles();
   return (
     <div className={classes.aboutUs}>
@@ -46,6 +75,9 @@ export default function SectionContact() {
                   formControlProps={{
                     fullWidth: true
                   }}
+                  inputProps={{
+                    onChange: (event) => setName(event.target.value)
+                  }}
                 />
               </GridItem>
               <GridItem md={4} sm={4}>
@@ -53,6 +85,9 @@ export default function SectionContact() {
                   labelText="Your email"
                   formControlProps={{
                     fullWidth: true
+                  }}
+                  inputProps={{
+                    onChange: (event) => setEmail(event.target.value)
                   }}
                 />
               </GridItem>
@@ -128,7 +163,7 @@ export default function SectionContact() {
                   classes.textCenter
                 )}
               >
-                <Button color="primary" round>
+                <Button color="primary" round onClick={() => onSubmit(name, email, specialitySelect)}>
                   Let{"'"}s talk
                 </Button>
               </GridItem>
