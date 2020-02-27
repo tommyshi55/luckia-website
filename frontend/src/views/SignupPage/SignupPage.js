@@ -105,7 +105,7 @@ export default function SignUpPage({ ...rest }) {
                       <InfoArea
                         className={classes.infoArea}
                         title="Keep Up for New Opportunities"
-                        description="Stay updated for future opportunities to volunteer nad work with us."
+                        description="Stay updated for future opportunities to volunteer and work with us."
                         icon={Group}
                         iconColor="info"
                       />
