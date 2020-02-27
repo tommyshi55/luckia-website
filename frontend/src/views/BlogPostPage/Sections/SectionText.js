@@ -9,9 +9,9 @@ import GridItem from "components/Grid/GridItem.js";
 import Quote from "components/Typography/Quote.js";
 // core components
 
-import blog4 from "assets/img/examples/blog4.jpg";
-import blog3 from "assets/img/examples/blog3.jpg";
-import blog1 from "assets/img/examples/blog1.jpg";
+import service1 from "assets/img/examples/service1.JPG";
+import service2 from "assets/img/examples/service2.JPG";
+import service3 from "assets/img/examples/service3.JPG";
 
 import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.js";
 
@@ -51,13 +51,13 @@ export default function SectionText() {
         <GridItem xs={12} sm={10} md={10} className={classes.section}>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
-              <img src={blog4} alt="..." className={imgClasses} />
+              <img src={service1} alt="..." className={imgClasses} />
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
-              <img src={blog3} alt="..." className={imgClasses} />
+              <img src={service2} alt="..." className={imgClasses} />
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
-              <img src={blog1} alt="..." className={imgClasses} />
+              <img src={service3} alt="..." className={imgClasses} />
             </GridItem>
           </GridContainer>
         </GridItem>
