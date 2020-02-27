@@ -24,6 +24,8 @@ function onSubmit(name, email, message) {
 }
 
 export default function SectionWork() {
+  const [status, setStatus] = React.useState("");
+
   // input fields
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -84,7 +86,14 @@ export default function SectionWork() {
                 md={4}
                 className={classes.mrAuto + " " + classes.mlAuto}
               >
-                <Button color="primary" onClick={() => onSubmit(name, email, message)}>Send Message</Button>
+                <p>{status}</p>
+                <Button color="primary" onClick={() => {
+                  onSubmit(name, email, message)
+                  .then((res) => {
+
+                  });
+                }}>
+                Send Message</Button>
               </GridItem>
             </GridContainer>
           </form>

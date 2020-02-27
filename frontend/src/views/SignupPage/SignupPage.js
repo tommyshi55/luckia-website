@@ -32,16 +32,12 @@ import axios from "axios";
 
 const useStyles = makeStyles(signupPageStyle);
 
-function onSignup(firstName, lastName, email, phone) {
-  axios({
-    method: 'post',
-    url: 'http://localhost:4000/api/signup',
-    data: {
-      fName: firstName,
-      lName: lastName,
-      email: email,
-      phone: phone
-    }
+async function onSignup(firstName, lastName, email, phone) {
+  await axios.post('http://localhost:4000/api/signup', {
+    fName: firstName,
+    lName: lastName,
+    email: email,
+    phone: phone
   });
 }
 
@@ -62,11 +58,13 @@ export default function SignUpPage({ ...rest }) {
     document.body.scrollTop = 0;
   });
 
+  const [status, setStatus] = React.useState("");
+
   // input form field
-  const [email, setEmail] = React.useState("");
-  const [firstName, setFirstName] = React.useState("");
-  const [lastName, setLastName] = React.useState("");
-  const [phone, setPhone] = React.useState("");
+  const [email, setEmail] = React.useState({});
+  const [firstName, setFirstName] = React.useState({});
+  const [lastName, setLastName] = React.useState({});
+  const [phone, setPhone] = React.useState({});
 
   const classes = useStyles();
   return (
@@ -127,7 +125,7 @@ export default function SignUpPage({ ...rest }) {
                               </InputAdornment>
                             ),
                             placeholder: "First Name...",
-                            onChange: (event) => setFirstName(event.target.value)
+                            onChange: (event) => setFirstName(event.target)
                           }}
                         />
                         <CustomInput
@@ -145,7 +143,7 @@ export default function SignUpPage({ ...rest }) {
                               </InputAdornment>
                             ),
                             placeholder: "Last Name...",
-                            onChange: (event) => setLastName(event.target.value)
+                            onChange: (event) => setLastName(event.target)
                           }}
                         />
                         <CustomInput
@@ -163,7 +161,7 @@ export default function SignUpPage({ ...rest }) {
                               </InputAdornment>
                             ),
                             placeholder: "Email...",
-                            onChange: (event) => setEmail(event.target.value)
+                            onChange: (event) => setEmail(event.target)
                           }}
                         />
                         <CustomInput
@@ -183,11 +181,22 @@ export default function SignUpPage({ ...rest }) {
                               </InputAdornment>
                             ),
                             placeholder: "Phone Number...",
-                            onChange: (event) => setPhone(event.target.value)
+                            onChange: (event) => setPhone(event.target)
                           }}
                         />
                         <div className={classes.textCenter}>
-                          <Button round color="primary" onClick={() => onSignup(firstName, lastName, email, phone)}>
+                          <p>{status}</p>
+                          <Button round color="primary" onClick={() => {
+                            onSignup(firstName.value, lastName.value, email.value, phone.value)
+                            .then((res) => {
+                              setStatus("Thank you for signing up!")
+                              setTimeout(() => setStatus(""), 3000);
+                              email.value = "";
+                              firstName.value = "";
+                              lastName.value = "";
+                              phone.value = "";
+                            });
+                          }}>
                             Sign Up
                           </Button>
                         </div>
