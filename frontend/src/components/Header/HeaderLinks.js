@@ -92,7 +92,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list + " " + classes.mlAuto}>
 
       <ListItem className={classes.listItem}>
-        <Link to="/about" style={{ color: 'white' }}>
+        <Link to="/about" className={classes.dropdownLink}>
           <Button
             color="transparent"
             target="_blank"
@@ -105,7 +105,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-      <Link to="/error" style={{ color: 'white' }}>
+      <Link to="/service" className={classes.dropdownLink}>
         <Button
           color="transparent"
           target="_blank"
@@ -119,7 +119,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-      <Link to="/contact-us" style={{ color: 'white' }}>
+      <Link to="/contact-us" className={classes.dropdownLink}>
         <Button
           color="transparent"
           target="_blank"

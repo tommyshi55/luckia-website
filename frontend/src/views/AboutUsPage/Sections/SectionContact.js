@@ -31,7 +31,7 @@ function onSubmit(name, email, select) {
       message = "I want to be a event volunteer";
       break;
     default:
-      console.log("No speciality");
+      message = "WEBSITE: NO SPECIALITY. PLEASE CONFIRM WITH THE SENDER";
   }
 
   axios.post('http://localhost:4000/api/work', {
@@ -47,9 +47,11 @@ export default function SectionContact() {
     setSpecialitySelect(event.target.value);
   };
 
+  const [status, setStatus] = React.useState("");
+
   // input fields
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
+  const [name, setName] = React.useState({});
+  const [email, setEmail] = React.useState({});
 
   const classes = useStyles();
   return (
@@ -76,7 +78,7 @@ export default function SectionContact() {
                     fullWidth: true
                   }}
                   inputProps={{
-                    onChange: (event) => setName(event.target.value)
+                    onChange: (event) => setName(event.target)
                   }}
                 />
               </GridItem>
@@ -87,7 +89,7 @@ export default function SectionContact() {
                     fullWidth: true
                   }}
                   inputProps={{
-                    onChange: (event) => setEmail(event.target.value)
+                    onChange: (event) => setEmail(event.target)
                   }}
                 />
               </GridItem>
@@ -163,7 +165,16 @@ export default function SectionContact() {
                   classes.textCenter
                 )}
               >
-                <Button color="primary" round onClick={() => onSubmit(name, email, specialitySelect)}>
+                <p>{status}</p>
+                <Button color="primary" round onClick={() => {
+                  onSubmit(name.value, email.value, specialitySelect)
+                  .then((res) => {
+                    setStatus("Thank you for your interest. We will get back to you shortly.")
+                    setTimeout(() => setStatus(""), 5000);
+                    name.value = "";
+                    email.value = "";
+                  });
+                }}>
                   Let{"'"}s talk
                 </Button>
               </GridItem>

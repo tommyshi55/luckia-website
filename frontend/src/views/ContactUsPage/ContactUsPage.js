@@ -127,10 +127,10 @@ export default function ContactUsPage() {
   const [status, setStatus] = React.useState("");
 
   // input form field
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [phone, setPhone] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = React.useState({});
+  const [email, setEmail] = React.useState({});
+  const [phone, setPhone] = React.useState({});
+  const [message, setMessage] = React.useState({});
 
   const classes = useStyles();
   return (
@@ -177,7 +177,7 @@ export default function ContactUsPage() {
                       fullWidth: true
                     }}
                     inputProps={{
-                      onChange: (event) => setName(event.target.value)
+                      onChange: (event) => setName(event.target)
                     }}
                   />
                   <CustomInput
@@ -187,7 +187,7 @@ export default function ContactUsPage() {
                       fullWidth: true
                     }}
                     inputProps={{
-                      onChange: (event) => setEmail(event.target.value)
+                      onChange: (event) => setEmail(event.target)
                     }}
                   />
                   <CustomInput
@@ -197,7 +197,7 @@ export default function ContactUsPage() {
                       fullWidth: true
                     }}
                     inputProps={{
-                      onChange: (event) => setPhone(event.target.value)
+                      onChange: (event) => setPhone(event.target)
                     }}
                   />
                   <CustomInput
@@ -209,16 +209,20 @@ export default function ContactUsPage() {
                     inputProps={{
                       multiline: true,
                       rows: 6,
-                      onChange: (event) => setMessage(event.target.value)
+                      onChange: (event) => setMessage(event.target)
                     }}
                   />
                   <div className={classes.textCenter}>
                     <p>{status}</p>
                     <Button color="primary" round onClick={() => {
-                      onSubmit(name, email, phone, message)
+                      onSubmit(name.value, email.value, phone.value, message.value)
                       .then((response) => {
                         setStatus("Thank you for your message. We will be in contact shortly.");
-                        setTimeout(() => setStatus(""), 3000);
+                        setTimeout(() => setStatus(""), 5000);
+                        name.value = "";
+                        email.value = "";
+                        phone.value = "";
+                        message.value = "";
                       });
                     }}>
                       Contact us

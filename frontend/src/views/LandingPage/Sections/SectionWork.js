@@ -24,10 +24,12 @@ function onSubmit(name, email, message) {
 }
 
 export default function SectionWork() {
+  const [status, setStatus] = React.useState("");
+
   // input fields
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = React.useState({});
+  const [email, setEmail] = React.useState({});
+  const [message, setMessage] = React.useState({});
 
   const classes = useStyles();
   return (
@@ -49,7 +51,7 @@ export default function SectionWork() {
                     fullWidth: true
                   }}
                   inputProps={{
-                    onChange: (event) => setName(event.target.value)
+                    onChange: (event) => setName(event.target)
                   }}
                 />
               </GridItem>
@@ -61,7 +63,7 @@ export default function SectionWork() {
                     fullWidth: true
                   }}
                   inputProps={{
-                    onChange: (event) => setEmail(event.target.value)
+                    onChange: (event) => setEmail(event.target)
                   }}
                 />
               </GridItem>
@@ -75,7 +77,7 @@ export default function SectionWork() {
                 inputProps={{
                   multiline: true,
                   rows: 5,
-                  onChange: (event) => setMessage(event.target.value)
+                  onChange: (event) => setMessage(event.target)
                 }}
               />
               <GridItem
@@ -84,7 +86,18 @@ export default function SectionWork() {
                 md={4}
                 className={classes.mrAuto + " " + classes.mlAuto}
               >
-                <Button color="primary" onClick={() => onSubmit(name, email, message)}>Send Message</Button>
+                <p>{status}</p>
+                <Button color="primary" onClick={() => {
+                  onSubmit(name.value, email.value, message.value)
+                  .then((res) => {
+                    setStatus("Thank you for your interest. We will get back to you shortly.")
+                    setTimeout(() => setStatus(""), 5000);
+                    name.value = "";
+                    email.value = "";
+                    message.value = "";
+                  });
+                }}>
+                Send Message</Button>
               </GridItem>
             </GridContainer>
           </form>
