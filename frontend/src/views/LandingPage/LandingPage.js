@@ -1,4 +1,5 @@
 /*eslint-disable*/ import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -59,14 +60,15 @@ export default function LandingPage({ ...rest }) {
               in many languages for the purpose of applying inclusive practice and connecting all students.
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-              >
-                About Us
-              </Button>
+              <Link to="/about">
+                <Button
+                  color="danger"
+                  size="lg"
+                  target="_blank"
+                >
+                  About Us
+                </Button>
+              </Link>
             </GridItem>
           </GridContainer>
         </div>

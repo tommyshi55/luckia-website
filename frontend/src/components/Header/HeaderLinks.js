@@ -105,7 +105,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-      <Link to="/error" style={{ color: 'white' }}>
+      <Link to="/service" style={{ color: 'white' }}>
         <Button
           color="transparent"
           target="_blank"
