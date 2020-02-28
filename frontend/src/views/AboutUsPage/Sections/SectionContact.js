@@ -34,7 +34,7 @@ function onSubmit(name, email, select) {
       message = "WEBSITE: NO SPECIALITY. PLEASE CONFIRM WITH THE SENDER";
   }
 
-  axios.post('http://localhost:4000/api/work', {
+  axios.post('/api/work', {
     name: name,
     email: email,
     message: message

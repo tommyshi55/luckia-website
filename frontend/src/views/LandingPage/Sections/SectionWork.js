@@ -16,7 +16,7 @@ import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSectio
 const useStyles = makeStyles(workStyle);
 
 function onSubmit(name, email, message) {
-  axios.post('http://localhost:4000/api/work', {
+  axios.post('/api/work', {
     name: name,
     email: email,
     message: message
