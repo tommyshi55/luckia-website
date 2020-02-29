@@ -10,14 +10,14 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('../frontend/build'));
+app.use(express.static('./frontend/build'));
 
-app.use('/api/signup', require('./routes/signup'));
-app.use('/api/contact', require('./routes/contact'));
-app.use('/api/work', require('./routes/work'));
+app.use('/api/signup', require('./backend/routes/signup'));
+app.use('/api/contact', require('./backend/routes/contact'));
+app.use('/api/work', require('./backend/routes/work'));
 
 app.get('/*', (req, res) => {
-    res.sendFile('index.html', { root: __dirname + '../frontend/build' });
+    res.sendFile('index.html', { root: __dirname + '/frontend/build' });
 });
 
 app.listen(PORT, () => {
