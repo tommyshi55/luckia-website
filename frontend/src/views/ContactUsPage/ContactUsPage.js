@@ -107,7 +107,7 @@ const CustomSkinMap = withScriptjs(
 );
 
 async function onSubmit(name, email, phone, message) {
-  await axios.post('http://localhost:4000/api/contact', {
+  await axios.post('/api/contact', {
     name: name,
     email: email,
     phone: phone,
