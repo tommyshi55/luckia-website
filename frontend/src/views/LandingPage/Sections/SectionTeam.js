@@ -68,7 +68,7 @@ export default function SectionTeam() {
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <a href="https://www.linkedin.com/in/lexie-qiao-2b1335143/">
+                    <a href="https://www.linkedin.com/in/lexie-qiao-2b1335143/" target="_blank">
                       <Button justIcon simple color="linkedin">
                         <i className="fab fa-linkedin-in" />
                       </Button>
@@ -142,7 +142,7 @@ export default function SectionTeam() {
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <a href="https://www.linkedin.com/in/tommy-shi-ba6a79121/">
+                    <a href="https://www.linkedin.com/in/tommy-shi-ba6a79121/" target="_blank">
                       <Button justIcon simple color="linkedin">
                         <i className="fab fa-linkedin-in" />
                       </Button>
@@ -216,7 +216,7 @@ export default function SectionTeam() {
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <a href="https://www.linkedin.com/in/xizhe-lin-715349166/">
+                    <a href="https://www.linkedin.com/in/xizhe-lin-715349166/" target="_blank">
                       <Button justIcon simple color="linkedin">
                         <i className="fab fa-linkedin-in" />
                       </Button>
@@ -254,7 +254,7 @@ export default function SectionTeam() {
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <a href="https://www.linkedin.com/in/hongchang-zhang-253002184/">
+                    <a href="https://www.linkedin.com/in/hongchang-zhang-253002184/" target="_blank">
                       <Button justIcon simple color="linkedin">
                         <i className="fab fa-linkedin-in" />
                       </Button>
