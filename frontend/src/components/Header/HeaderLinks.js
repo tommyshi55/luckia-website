@@ -141,7 +141,7 @@ export default function HeaderLinks(props) {
           className={classes.navButton}
           round
         >
-          sign up for our membership
+          sign up for our program
         </Button>        
       </Link>
       </ListItem>
