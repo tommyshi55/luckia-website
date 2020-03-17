@@ -68,7 +68,7 @@ export default function SectionTeam() {
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
-                    <a href="https://www.linkedin.com/in/tommy-shi-ba6a79121/">
+                    <a href="https://www.linkedin.com/in/lexie-qiao-2b1335143/">
                       <Button justIcon simple color="linkedin">
                         <i className="fab fa-linkedin-in" />
                       </Button>

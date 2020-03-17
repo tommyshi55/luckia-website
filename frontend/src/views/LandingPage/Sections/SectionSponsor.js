@@ -36,7 +36,7 @@ export default function SectionSponsor() {
             </a>
           </GridItem>
           <GridItem xs={12} sm={6} md={6}>
-            <a href="https://adventist.org.nz/">
+            <a href="https://acsdac.org/">
               <img src={churchPic} alt="Auckland Seventh Day Adventist Church" />
             </a>
           </GridItem>
