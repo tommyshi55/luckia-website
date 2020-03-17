@@ -31,12 +31,12 @@ export default function SectionSponsor() {
       <div>
         <GridContainer>
           <GridItem xs={12} sm={6} md={6}>
-            <a href="https://www.byron2005.com/">
+            <a href="https://www.byron2005.com/" target="_blank">
               <img src={byronPic} alt="Byron International" />
             </a>
           </GridItem>
           <GridItem xs={12} sm={6} md={6}>
-            <a href="https://adventist.org.nz/">
+            <a href="https://acsdac.org/" target="_blank">
               <img src={churchPic} alt="Auckland Seventh Day Adventist Church" />
             </a>
           </GridItem>
