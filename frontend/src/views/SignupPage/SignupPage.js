@@ -88,7 +88,7 @@ export default function SignUpPage({ ...rest }) {
           <GridContainer justify="center">
             <GridItem xs={12} sm={10} md={10}>
               <Card className={classes.cardSignup}>
-                <h2 className={classes.cardTitle}>Sign Up For Our Membership</h2>
+                <h2 className={classes.cardTitle}>Sign Up For Our Mentorship Program</h2>
                 <CardBody>
                   <GridContainer justify="center">
                     <GridItem xs={12} sm={5} md={5}>
@@ -102,8 +102,9 @@ export default function SignUpPage({ ...rest }) {
                       
                       <InfoArea
                         className={classes.infoArea}
-                        title="Keep Up for New Opportunities"
-                        description="Stay updated for future opportunities to volunteer and work with us."
+                        title="Professioal Guidance"
+                        description="Get paired with a professional mentor to guide you through the transition between
+                                    high school and university."
                         icon={Group}
                         iconColor="info"
                       />
