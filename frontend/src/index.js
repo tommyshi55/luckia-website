@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactGA from "react-ga";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
 
@@ -14,6 +15,9 @@ import SignupPage from "./views/SignupPage/SignupPage.js";
 import ErrorPage from "./views/ErrorPage/ErrorPage.js";
 
 var hist = createBrowserHistory();
+
+ReactGA.initialize(process.env.REACT_APP_GA_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <Router history={hist}>
