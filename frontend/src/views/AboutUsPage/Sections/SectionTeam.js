@@ -16,7 +16,6 @@ import teamStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/t
 
 import tommyPic from "assets/img/faces/tommy.jpg";
 import lexiePic from "assets/img/faces/lexie.jpg";
-import cynthiaPic from "assets/img/faces/cynthia.jpg";
 import lucyPic from "assets/img/faces/lucy.jpg";
 import raymondPic from "assets/img/faces/raymond.JPG";
 import hongchangPic from "assets/img/faces/hongchang.JPG";
@@ -63,7 +62,7 @@ export default function SectionTeam() {
                 <Button justIcon simple color="linkedin">
                   <i className="fab fa-linkedin-in" />
                 </Button>
-              </a>    
+              </a>
             </CardFooter>
           </Card>
         </GridItem>
@@ -97,31 +96,6 @@ export default function SectionTeam() {
             <CardAvatar profile plain>
               <a href="#pablo">
                 <img
-                  src={cynthiaPic}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Cynthia Cai</h4>
-              <h6 className={classes.textMuted}>PROGRAM COORDINATOR</h6>
-              <p className={classes.cardDescription}>
-                Why be normal when you can be everything and anything else?
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button justIcon simple color="linkedin">
-                <i className="fab fa-linkedin-in" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
                   src={tommyPic}
                   alt="profile-pic"
                   className={classes.img}
@@ -140,7 +114,7 @@ export default function SectionTeam() {
                 <Button justIcon simple color="linkedin">
                   <i className="fab fa-linkedin-in" />
                 </Button>
-              </a>      
+              </a>
             </CardFooter>
           </Card>
         </GridItem>
@@ -163,7 +137,7 @@ export default function SectionTeam() {
                 <Button justIcon simple color="linkedin">
                   <i className="fab fa-linkedin-in" />
                 </Button>
-              </a>    
+              </a>
             </CardFooter>
           </Card>
         </GridItem>
@@ -186,7 +160,7 @@ export default function SectionTeam() {
                 <Button justIcon simple color="linkedin">
                   <i className="fab fa-linkedin-in" />
                 </Button>
-              </a>    
+              </a>
             </CardFooter>
           </Card>
         </GridItem>
