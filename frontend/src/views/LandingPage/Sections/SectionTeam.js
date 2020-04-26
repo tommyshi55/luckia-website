@@ -15,7 +15,6 @@ import Button from "components/CustomButtons/Button.js";
 
 import tommyPic from "assets/img/faces/tommy.jpg";
 import lexiePic from "assets/img/faces/lexie.jpg";
-import lucyPic from "assets/img/faces/lucy.jpg";
 import raymondPic from "assets/img/faces/raymond.JPG";
 import hongchangPic from "assets/img/faces/hongchang.JPG";
 
@@ -72,42 +71,6 @@ export default function SectionTeam() {
                         <i className="fab fa-linkedin-in" />
                       </Button>
                     </a>
-                  </CardFooter>
-                </GridItem>
-              </GridContainer>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={6} md={6}>
-            <Card profile plain className={classes.card3}>
-              <GridContainer>
-                <GridItem xs={12} sm={5} md={5}>
-                  <CardHeader image plain>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={lucyPic} alt="..." />
-                    </a>
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: `url(${lucyPic})`,
-                        opacity: "1"
-                      }}
-                    />
-                  </CardHeader>
-                </GridItem>
-                <GridItem xs={12} sm={7} md={7}>
-                  <CardBody plain>
-                    <h4 className={classes.cardTitle}>Lucy Shi</h4>
-                    <Muted>
-                      <h6 className={classes.cardCategory}>PROGRAM COORDINATOR</h6>
-                    </Muted>
-                    <p className={classes.description}>
-                      A little progress each day adds up to big results.
-                    </p>
-                  </CardBody>
-                  <CardFooter plain className={classes.justifyContentCenter}>
-                    <Button justIcon simple color="linkedin">
-                      <i className="fab fa-linkedin-in" />
-                    </Button>
                   </CardFooter>
                 </GridItem>
               </GridContainer>
@@ -210,7 +173,7 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Hongchang Zhang</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>ASSISTANT PROGRAM COORDINATOR</h6>
+                      <h6 className={classes.cardCategory}>PROGRAM COORDINATOR</h6>
                     </Muted>
                     <p className={classes.description}>
                       Make the best use of every day.

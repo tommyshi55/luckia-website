@@ -16,7 +16,6 @@ import teamStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/t
 
 import tommyPic from "assets/img/faces/tommy.jpg";
 import lexiePic from "assets/img/faces/lexie.jpg";
-import lucyPic from "assets/img/faces/lucy.jpg";
 import raymondPic from "assets/img/faces/raymond.JPG";
 import hongchangPic from "assets/img/faces/hongchang.JPG";
 
@@ -66,31 +65,7 @@ export default function SectionTeam() {
             </CardFooter>
           </Card>
         </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src={lucyPic}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Lucy Shi</h4>
-              <h6 className={classes.textMuted}>PROGRAM COORDINATOR</h6>
-              <p className={classes.cardDescription}>
-                A little progress each day adds up to big results.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button justIcon simple color="linkedin">
-                <i className="fab fa-linkedin-in" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
+
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>
@@ -150,7 +125,7 @@ export default function SectionTeam() {
             </CardAvatar>
             <CardBody plain>
               <h4 className={classes.cardTitle}>Hongchang Zhang</h4>
-              <h6 className={classes.textMuted}>ASSISTANT PROGRAM COORDINATOR</h6>
+              <h6 className={classes.textMuted}>PROGRAM COORDINATOR</h6>
               <p className={classes.cardDescription}>
                 Make the best use of every day.
               </p>
