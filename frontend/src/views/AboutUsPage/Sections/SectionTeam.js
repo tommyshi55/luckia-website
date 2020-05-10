@@ -1,6 +1,8 @@
 import React from "react";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -9,6 +11,7 @@ import CardAvatar from "components/Card/CardAvatar.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import Button from "components/CustomButtons/Button.js";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 

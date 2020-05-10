@@ -1,15 +1,17 @@
 /*eslint-disable*/ import React from "react";
 import { Link } from "react-router-dom";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
+
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";

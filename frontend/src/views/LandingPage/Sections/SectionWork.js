@@ -1,9 +1,8 @@
 import React from "react";
 import axios from 'axios';
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";

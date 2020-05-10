@@ -1,8 +1,10 @@
 /*eslint-disable*/
 import React, { useState } from "react";
 import axios from "axios";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
 // react components used to create a google map
 import {
   withScriptjs,
@@ -10,15 +12,16 @@ import {
   GoogleMap,
   Marker
 } from "react-google-maps";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
-import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
-import BusinessCenter from "@material-ui/icons/BusinessCenter";
+
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
