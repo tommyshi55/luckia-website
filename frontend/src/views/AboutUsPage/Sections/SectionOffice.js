@@ -1,9 +1,12 @@
 import React from "react";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
