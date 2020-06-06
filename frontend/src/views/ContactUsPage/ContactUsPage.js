@@ -226,6 +226,14 @@ export default function ContactUsPage() {
                         email.value = "";
                         phone.value = "";
                         message.value = "";
+                      })
+                      .catch((error) => {
+                        setStatus("Server error. Please contact us through phone or email.");
+                        setTimeout(() => setStatus(""), 8000);
+                        name.value = "";
+                        email.value = "";
+                        phone.value = "";
+                        message.value = "";
                       });
                     }}>
                       Contact us

@@ -14,8 +14,13 @@ import workStyle from "assets/jss/material-kit-pro-react/views/landingPageSectio
 
 const useStyles = makeStyles(workStyle);
 
-function onSubmit(name, email, message) {
-  axios.post('/api/work', {
+const errorStyle = {
+  color: "black",
+  textAlign: "center"
+};
+
+async function onSubmit(name, email, message) {
+  await axios.post('/api/work', {
     name: name,
     email: email,
     message: message
@@ -85,11 +90,18 @@ export default function SectionWork() {
                 md={4}
                 className={classes.mrAuto + " " + classes.mlAuto}
               >
-                <p>{status}</p>
+                <p style={errorStyle}>{status}</p>
                 <Button color="primary" onClick={() => {
                   onSubmit(name.value, email.value, message.value)
                   .then((res) => {
                     setStatus("Thank you for your interest. We will get back to you shortly.")
+                    setTimeout(() => setStatus(""), 5000);
+                    name.value = "";
+                    email.value = "";
+                    message.value = "";
+                  })
+                  .catch((err) => {
+                    setStatus("Server error, please contact our team through email.")
                     setTimeout(() => setStatus(""), 5000);
                     name.value = "";
                     email.value = "";
