@@ -19,7 +19,7 @@ import contactStyle from "assets/jss/material-kit-pro-react/views/aboutUsSection
 
 const useStyles = makeStyles(contactStyle);
 
-function onSubmit(name, email, select) {
+async function onSubmit(name, email, select) {
   var message = "";
   switch(select) {
     case "1":
@@ -35,7 +35,7 @@ function onSubmit(name, email, select) {
       message = "WEBSITE: NO SPECIALITY. PLEASE CONFIRM WITH THE SENDER";
   }
 
-  axios.post('/api/work', {
+  await axios.post('/api/work', {
     name: name,
     email: email,
     message: message
@@ -172,6 +172,12 @@ export default function SectionContact() {
                   .then((res) => {
                     setStatus("Thank you for your interest. We will get back to you shortly.")
                     setTimeout(() => setStatus(""), 5000);
+                    name.value = "";
+                    email.value = "";
+                  })
+                  .catch((err) => {
+                    setStatus("Server error, please contact our team through email.")
+                    setTimeout(() => setStatus(""), 8000);
                     name.value = "";
                     email.value = "";
                   });

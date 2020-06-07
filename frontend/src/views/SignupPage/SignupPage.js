@@ -198,6 +198,14 @@ export default function SignUpPage({ ...rest }) {
                               firstName.value = "";
                               lastName.value = "";
                               phone.value = "";
+                            })
+                            .catch((err) => {
+                              setStatus("Server error. Please contact our team")
+                              setTimeout(() => setStatus(""), 5000);
+                              email.value = "";
+                              firstName.value = "";
+                              lastName.value = "";
+                              phone.value = "";
                             });
                           }}>
                             Sign Up

@@ -226,6 +226,14 @@ export default function ContactUsPage() {
                         email.value = "";
                         phone.value = "";
                         message.value = "";
+                      })
+                      .catch((error) => {
+                        setStatus("Server error. Please contact us through phone or email.");
+                        setTimeout(() => setStatus(""), 8000);
+                        name.value = "";
+                        email.value = "";
+                        phone.value = "";
+                        message.value = "";
                       });
                     }}>
                       Contact us
@@ -239,7 +247,7 @@ export default function ContactUsPage() {
                   title="Give us a ring"
                   description={
                     <p>
-                      Luckia Student Help <br /> +64 27 394 2066 <br /> Mon - Fri,
+                      Luckia Student Help <br /> +64 27 394 2066 <br /> luckiastudenthelp@gmail.com <br /> Mon - Fri,
                       8:00-22:00 NZT
                     </p>
                   }
