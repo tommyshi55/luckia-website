@@ -38,7 +38,7 @@ export default function SectionTeam() {
             classes.textCenter
           )}
         >
-          <h2 className={classes.title}>We are nerd rockstars</h2>
+          <h2 className={classes.title}>We are superstars</h2>
           <h5 className={classes.description}>
             We have a diverse team who looks after every student who needs help.
           </h5>
@@ -105,7 +105,7 @@ export default function SectionTeam() {
             </CardAvatar>
             <CardBody plain>
               <h4 className={classes.cardTitle}>Raymond Lin</h4>
-              <h6 className={classes.textMuted}>DIGITAL MARKETING MANAGER AND FRONTEND DEVELOPER</h6>
+              <h6 className={classes.textMuted}>DATA ANALYST</h6>
               <p className={classes.cardDescription}>
                 Hello world!
               </p>

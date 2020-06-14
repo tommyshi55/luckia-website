@@ -135,7 +135,7 @@ export default function SectionTeam() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Raymond Lin</h4>
                     <Muted>
-                      <h6 className={classes.cardCategory}>DIGITAL MARKETING MANAGER AND FRONTEND DEVELOPER</h6>
+                      <h6 className={classes.cardCategory}>DATA ANALYST</h6>
                     </Muted>
                     <p className={classes.description}>
                       Hello world!
