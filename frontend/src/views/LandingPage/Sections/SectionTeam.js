@@ -133,7 +133,7 @@ export default function SectionTeam() {
                 </GridItem>
                 <GridItem xs={12} sm={7} md={7}>
                   <CardBody plain>
-                    <h4 className={classes.cardTitle}>Raymond Lin</h4>
+                    <h4 className={classes.cardTitle}>Xizhe Lin</h4>
                     <Muted>
                       <h6 className={classes.cardCategory}>DATA ANALYST</h6>
                     </Muted>

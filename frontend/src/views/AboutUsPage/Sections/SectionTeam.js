@@ -104,7 +104,7 @@ export default function SectionTeam() {
               </a>
             </CardAvatar>
             <CardBody plain>
-              <h4 className={classes.cardTitle}>Raymond Lin</h4>
+              <h4 className={classes.cardTitle}>Xizhe Lin</h4>
               <h6 className={classes.textMuted}>DATA ANALYST</h6>
               <p className={classes.cardDescription}>
                 Hello world!
