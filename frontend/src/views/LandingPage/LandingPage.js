@@ -29,6 +29,7 @@ import SectionTeam from "./Sections/SectionTeam.js";
 import SectionWork from "./Sections/SectionWork.js";
 import SectionSponsor from "./Sections/SectionSponsor.js";
 import SectionFeature from "./Sections/SectionFeature.js";
+import SectionTestimonial from "./Sections/SectionTestimonial.js";
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -81,6 +82,7 @@ export default function LandingPage({ ...rest }) {
           <SectionProduct />
           <SectionFeature />
           <SectionTeam />
+          <SectionTestimonial />
           <SectionSponsor />
           <SectionWork />
         </div>
