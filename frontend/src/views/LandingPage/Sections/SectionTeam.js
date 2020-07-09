@@ -62,7 +62,8 @@ export default function SectionTeam() {
                       <h6 className={classes.cardCategory}>FOUNDER AND CEO</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Always have passion to build a brighter future for others and take actions from today.
+                      Lexie Qiao is a final year Education and Social work student at the University of Auckland. 
+                      Lexie has been the vice president in ESSA (Education and Social Work Student Association) in 2019 and her work is recognised in the highest accolade for tertiary education - Blues Award 2019 for Service and Leadership.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
@@ -100,7 +101,9 @@ export default function SectionTeam() {
                       <h6 className={classes.cardCategory}>HEAD OF TECHNOLOGY</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Technology is the best when it brings all people together.
+                      Tommy is a software engineering student at the University of Auckland. 
+                      He is one of the top-performing students and has been placed on the Dean’s Honour List several times. 
+                      He believes that students need to take responsibilities of themselves early in their lives.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
@@ -138,7 +141,8 @@ export default function SectionTeam() {
                       <h6 className={classes.cardCategory}>DATA ANALYST</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Hello world!
+                      Xizhe is a geographical information science and computer science student at the University of Auckland. 
+                      He is currently focusing on spatial planning and data analysis. He likes exploring the world through his cameras and maps.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
@@ -176,7 +180,9 @@ export default function SectionTeam() {
                       <h6 className={classes.cardCategory}>PROGRAM COORDINATOR</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Make the best use of every day.
+                      Hongchang is a master student in civil engineering and preparing to graduate.
+                      Despite his engineering background, he is very interested in networking and education.
+                      In his spare time, he enjoys exercising and reading.
                     </p>
                   </CardBody>
                   <CardFooter plain className={classes.justifyContentCenter}>
