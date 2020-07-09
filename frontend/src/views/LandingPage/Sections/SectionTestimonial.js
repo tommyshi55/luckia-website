@@ -17,7 +17,8 @@ import Muted from "components/Typography/Muted.js";
 import "../../../assets/css/carousel.css";
 import testimonialsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/testimonialsStyle.js";
 
-import hongchang from "assets/img/faces/hongchang.JPG";
+import cynthia from "assets/img/faces/cynthia.JPG";
+import generic from "assets/img/faces/generic.png";
 
 const useStyles = makeStyles(testimonialsStyle);
 
@@ -29,7 +30,8 @@ export default function SectionTestimonials({ ...rest }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: true,
+    autoplaySpeed: 6000
   };
   return (
     <div className="cd-section" {...rest}>
@@ -60,7 +62,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <Card testimonial plain className={classes.card2}>
                     <CardAvatar testimonial plain>
                       <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={hongchang} alt="..." />
+                        <img src={cynthia} alt="..." />
                       </a>
                     </CardAvatar>
                     <CardBody plain>
@@ -83,21 +85,101 @@ export default function SectionTestimonials({ ...rest }) {
                   <Card testimonial plain className={classes.card2}>
                     <CardAvatar testimonial plain>
                       <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={hongchang} alt="..." />
+                        <img src={generic} alt="..." />
                       </a>
                     </CardAvatar>
                     <CardBody plain>
                       <h5 className={classes.cardDescription}>
-                        {'"'}Thank you Anna for the invite thank you to the
-                        whole Vogue team Called I Miss the Old Kanye At the God
-                        {"'"}s last game Chop up the soul Kanye. I promise I
-                        will never let the people down. I want a better life for
-                        all!!! Pablo Pablo Pablo Pablo! Thank you Anna for the
-                        invite thank you to the whole Vogue team.{'"'}
+                        {'"'}Trust the programme and ask what you want to ask.
+                        <br />
+                        My mentor not only told me what I want to know about the University life and also taught me how to contact with the Uni when I have further questions
+                        {'"'}
                       </h5>
-                      <h4 className={classes.cardTitle}>Christian Louboutin</h4>
+                      <h4 className={classes.cardTitle}>Ivy Wang</h4>
                       <Muted>
-                        <h6>Designer @ Louboutin & Co.</h6>
+                        <h6>PARTICIPANT OF THE MENTORING PROGRAM</h6>
+                      </Muted>
+                    </CardBody>
+                  </Card>
+                </div>
+                <div>
+                  <Card testimonial plain className={classes.card2}>
+                    <CardAvatar testimonial plain>
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <img src={generic} alt="..." />
+                      </a>
+                    </CardAvatar>
+                    <CardBody plain>
+                      <h5 className={classes.cardDescription}>
+                        {'"'}The most critical thing is you have to prepare for the meeting in advance 
+                        so that you know what you want to know and make sure not losing your points during the meeting.
+                        {'"'}
+                      </h5>
+                      <h4 className={classes.cardTitle}>Fiona Qi</h4>
+                      <Muted>
+                        <h6>PARTICIPANT OF THE MENTORING PROGRAM</h6>
+                      </Muted>
+                    </CardBody>
+                  </Card>
+                </div>
+                <div>
+                  <Card testimonial plain className={classes.card2}>
+                    <CardAvatar testimonial plain>
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <img src={generic} alt="..." />
+                      </a>
+                    </CardAvatar>
+                    <CardBody plain>
+                      <h5 className={classes.cardDescription}>
+                        {'"'}The online meeting is not about teaching. It's more like you talk with one of your friends. 
+                        That is important to me since I feel more comfortable during the meeting.
+                        {'"'}
+                      </h5>
+                      <h4 className={classes.cardTitle}>Laura Guo</h4>
+                      <Muted>
+                        <h6>PARTICIPANT OF THE MENTORING PROGRAM</h6>
+                      </Muted>
+                    </CardBody>
+                  </Card>
+                </div>
+                <div>
+                  <Card testimonial plain className={classes.card2}>
+                    <CardAvatar testimonial plain>
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <img src={generic} alt="..." />
+                      </a>
+                    </CardAvatar>
+                    <CardBody plain>
+                      <h5 className={classes.cardDescription}>
+                        {'"'}If you want to learn something such as social skills and how to manage your timetable, apply for the programme, which is free!
+                        <br />
+                        You not only teach your mentee but learn from them
+                        {'"'}
+                      </h5>
+                      <h4 className={classes.cardTitle}>Linda Yan</h4>
+                      <Muted>
+                        <h6>MENTOR OF THE MENTORING PROGRAM</h6>
+                      </Muted>
+                    </CardBody>
+                  </Card>
+                </div>
+                <div>
+                  <Card testimonial plain className={classes.card2}>
+                    <CardAvatar testimonial plain>
+                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <img src={generic} alt="..." />
+                      </a>
+                    </CardAvatar>
+                    <CardBody plain>
+                      <h5 className={classes.cardDescription}>
+                        {'"'}I learned a lot how the younger generation thinks
+                        <br />
+                        Helping others and receiving good feedback is much joy for me, and I also learned a lot from my mentees.
+                        {'"'}
+                      </h5>
+                      <h4 className={classes.cardTitle}>JJ Liu</h4>
+                      <Muted>
+                        <h6>MENTOR OF THE MENTORING PROGRAM</h6>
                       </Muted>
                     </CardBody>
                   </Card>
